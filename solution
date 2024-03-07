@@ -1,0 +1,18 @@
+a = str(input())
+b = str(input())
+c = a + b
+e = b+a
+com = ""
+
+for i in c:
+    if int(i)<int(b[0]):
+        com = com + c
+        break
+    elif int(i)>int(b[0]):
+        com = com +e
+        break
+
+
+new = ''.join(sorted(com))
+
+print(new)
